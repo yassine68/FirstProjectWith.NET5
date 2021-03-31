@@ -7,6 +7,8 @@ namespace MyMusic.Core.Services
     public interface IMusicService
     {
         Task<IEnumerable<Music>> GetAllMusicsAsync();
+        Task<IEnumerable<Music>> GetAllMusicsWithArtistAsync();
+
         Task<Music> CreateMusicAsync(Music music);
         Task UpdateMusicAsync(Music musicToBeUpdated , Music music);
         void DeleteMusic(Music music);

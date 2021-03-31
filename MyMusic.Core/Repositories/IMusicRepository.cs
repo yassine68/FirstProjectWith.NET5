@@ -8,6 +8,7 @@ namespace MyMusic.Core.Repositories
     {
         Task<IEnumerable<Music>> GetAllWthArtisAsync();
         Task<Music> GetWithArtistByIdAsync(int id);
+        Task<Music> GetMusicByArtistIdAsync(int artistId);
         Task<IEnumerable< Music>>  GetAllWithArtistByArtistIdAsync(int artistId);
     }
 }
